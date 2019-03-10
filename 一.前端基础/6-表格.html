@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格</title>
+</head>
+<body>
+	<!--
+		结构:
+			table -> tr(行) > td(单元格)
+			表头: th 居中, 加粗显示
+			标题: caption(一个表格只有一个标题)
+			表结构: table -> thead | tbody | tfoot -> tr -> td
+		用途: 表格形式展示的内容
+	 -->
+
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+
+	<hr>
+
+	<!-- 
+		属性:
+			边框 border
+	 -->
+	 <h1>表格属性</h1>
+	<table border="1">
+		<tr>
+			<td>2015</td>
+			<td>2016</td>
+			<td>2017</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+	</table>
+
+	<!-- 
+		合并行: 
+		合并列:
+	 -->
+
+	<table border="1" width="500px" cellpadding='10' align="center" cellspacing="0" frame="void" rules="">
+		<caption>前端工程师平均工资列表</caption>
+		<tr>
+			<th rowspan="2">城市</th>
+			<!-- <th>2014</th> -->
+			<th colspan='2'>2014</th>
+			<th rowspan="2">2015</th>
+			<th rowspan="2">2016</th>
+		</tr>
+		<tr>
+			<!-- <th>城市</th> -->
+			<th>上半年</th>
+			<th>下半年</th>
+			<!-- <th>2015</th> -->
+			<!-- <th>2016</th> -->
+		</tr>
+		<tr>
+			<td>北京</td>
+			<td>8000</td>
+			<td>8000</td>
+			<td>8000</td>
+			<td>8000</td>
+		</tr>
+		<tr>
+			<td>上海</td>
+			<td>8000</td>
+			<td>8000</td>
+			<td>8000</td>
+			<td>8000</td>
+		</tr>
+		<tr>
+			<td>合计</td>
+			<td>8000</td>
+			<td>8000</td>
+			<td>8000</td>
+			<td>8000</td>
+		</tr>
+	</table>
+
+	<!-- 
+		tr属性:
+			align: 水平对齐方式
+			valign: 垂直对齐方式
+			
+	 -->
+</body>
+</html>

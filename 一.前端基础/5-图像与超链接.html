@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图像与超链接</title>
+	<style>
+		p {
+			height: 300px;
+		}
+		.a1 {
+			display: block;
+			margin-top: 300px;
+		}
+	</style>
+</head>
+<body>
+	<p id="html1">内部链接锚点</p>
+<!-- image -->
+	<!-- 
+		路径:
+			相对路径: 以当前文件为基准, 进行层层查询而到的路径
+			绝对路径: 以盘符为基准, 进行查询而到的路径
+	 -->
+	<!-- 
+		img属性:
+			src: 图片源路径
+			alt: 图片无法正常显示时展示的提示信息
+			width: 标签宽度 单位: px, pt, %
+			height: 标签高度
+	 -->
+
+	 <!-- 相对路径 -->
+	<img src="./image/html.jpg" alt="无法展示时显示" width="20px" height="20px">
+	<!-- 绝对路径 -->
+	<img src="D:\StudyStrock\project\webStudy\一.前端基础\image\html.jpg" alt="" width="100" height="100">
+
+<hr>
+
+<!-- 链接标签 a -->
+	<!-- 
+		站内链接: 通过锚点进行设置
+		站外链接: 不是同一个html文档
+	 -->
+	<!-- 
+		a标签属性:
+			href: 链接地址
+				邮件: mailto:邮件路径
+				下载: 链接地址为文件
+			target: 链接的目标窗口, _self | _black | _top | _parent
+			title: 鼠标悬停时显示的内容
+			name: 链接命名
+	 -->
+	<a class="a1" href="#html1">内部链接: 链接到p标签</a>
+	<a href="https://www.imooc.com">外部链接: 链接到慕课网</a>
+	<a href="#" title="空链接" name="啥都不去">空链接</a>
+
+	<a href="https://www.imooc.com" target="_black">外部链接: 链接到慕课网(新窗口打开)</a>
+	<a href="https://www.imooc.com" target="_self">外部链接: 链接到慕课网(当前窗口打开)</a>
+</body>
+</html>
